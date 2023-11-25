@@ -51,7 +51,7 @@ body {
     border-bottom: 1px solid var(--cornflower);
     background: white;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: 72px;
     justify-content: center;
     align-items: center;
@@ -413,7 +413,6 @@ body {
     list-style: none;
     gap: 24px;
     justify-content: center;
-    margin-top:120px;
 }
 
 .list-container {
@@ -431,7 +430,6 @@ body {
     font-weight: 500;
     line-height: 1.2em;
     letter-spacing: 0.4px;
-    width: 264px;
 }
 
 .section-one-list-item-def {
@@ -439,7 +437,7 @@ body {
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.32px;
-    width: 264px;
+   
 }
 
 .icon-list {
@@ -513,6 +511,7 @@ body {
     line-height: 1.11em;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+   
 }
 
 .list-two {
@@ -587,7 +586,7 @@ body {
 
 /*SECTION FOUR*/
 .section-four{
-    margin-bottom: auto 120px;
+    margin-bottom: 120px;
 }
 .section-four-info {
     color: var(--navy-blue);
@@ -606,15 +605,13 @@ body {
 }
 
 .section-four-items-list {
-    width: 168px;
     height: 88px;
     flex-shrink: 0;
     list-style: none;
     border: 1px solid #8E8F99;
     border-radius: 4px;
-    padding: 16px 32px;
+    padding: 16px 24px;
 }
-
 .section-four-items {
     display: flex;
     justify-content: center;
@@ -989,6 +986,13 @@ body {
         gap:284px;
         padding-top:80px;
     }
+    .mobile-menu-items-link:active, .mobile-contact-items-link:active .mobile-active{
+        color: var(--ocean);
+    }
+
+    .mobile-active{
+        color: var(--ocean);
+    }
     .mobile-menu-items-link{
         font-size: 36px;
         font-weight: 700;
@@ -997,12 +1001,20 @@ body {
         text-transform: capitalize;
         text-decoration: none;
     }
+    .mobile-contact-items{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        list-style: none;
+    }
     .mobile-contact-items-link {
         font-size: 36px;
         font-weight: 700;
         line-height: 1.12em;
         letter-spacing: 0.72px;
         text-decoration: none;
+
     }
     .mobile-contact-link{
         font-size: 20px;
@@ -1010,6 +1022,7 @@ body {
         line-height: 1.2em;
         letter-spacing: 0.72px;
         text-decoration: none;
+        color: var(--slate);
     }
     .mobile-modal.is-open {
         transform: translateX(0);
@@ -1037,6 +1050,13 @@ body {
         left:7px;
         top:7px;
     }
+    .icon-team-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 56px;
+        margin-top:48px;
+    }
     .mobile-menu-container{
         width: 428px;
         height: 796px;
@@ -1051,7 +1071,7 @@ body {
     .mobile-modal {
         top: 0;
         display: block;
-        height: 100vh;
+        height: 796px;
         width: 100%;
         position: fixed;
         background-color: white;
@@ -1060,15 +1080,21 @@ body {
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   
-
+    .icon-mobile {
+    fill: white;
+        text-decoration: none;
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        position: absolute;
+    }
+          
     .hero-section{
         background: var(--navy-blue);
         background-image: url('../images/office.jpg');
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        
-           
     }
     .main-section{
          width: 320px;
@@ -1092,6 +1118,7 @@ body {
 
     .section-one-list-item-def {
         margin-top: 0;
+        text-align: left;
     }
 
     .icon-list {
@@ -1101,6 +1128,7 @@ body {
         display: none;
     }
     .section-three{
+       
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1114,6 +1142,7 @@ body {
         width:165px;
         font-size: 36px;
         line-height: 1.12em;
+        margin-top: 96px;
     }
     .section-four{
         display:block;
@@ -1124,7 +1153,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
+
+    }
     .footer-subscribe {
         justify-content: center;
     }
@@ -1137,13 +1167,71 @@ body {
 {
 .container {
         width: 768px;
+
+    }
+    .main-header-menu {
+        padding-right:180px;
+    }
+    .contact-header-menu {
+        gap: 10px;
+    }
+    .contact-header-menu-list-items{
+        font-size: 12px;
+        line-height: 1.67em;
+        letter-spacing: 0.48px;
+    }
+    .hero-section{
+        background: var(--navy-blue);
+        background-image: url('../images/office.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .icon-list {
+        display: none;
+     }
+     .section-one-list{
+        display: flex;
+        justify-content: center;
+        gap:40px;
+        margin: 0px;
+        
+     }
+
+     .section-one-list-item-info{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.12em;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+     }
+     .section-one-list-item-def{
+        align-self: stretch;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5em;
+        letter-spacing: 0.32px;
+     }
+    .section-two{
+        display: none;
+    }
+    .section-three{
+        padding-top: 96px;
+        padding-bottom: 96px;;
+    }
+    footer{
+        position: relative;
+        height:456px;
+    }
+    .footer-subs{
+     padding-right: 156px;
         
     }
 }
+
 @media (min-width: 1200px){
 .container {
         width: 1200px;
     
     }
 }
-
