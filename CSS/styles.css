@@ -249,7 +249,7 @@ body {
     height: 24px;
     flex-shrink: 0;
     position: absolute;
-    right: 0px;
+    right: 3px;
     top: 0px;
    }
 .modal-close-btn:hover {
@@ -1051,7 +1051,7 @@ body {
         height: 24px;
         flex-shrink: 0;
         position: absolute;
-        right:2px;
+        right:4px;
         top:0px;
     }
 
