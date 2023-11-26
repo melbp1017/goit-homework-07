@@ -242,8 +242,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
-
+   .icon-close {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+   }
 .modal-close-btn:hover {
     fill: currentColor;
     border: 1px solid currentColor;
@@ -1038,14 +1046,16 @@ body {
         right: 10px;
     }
 
-    .icon-close {
-        height: 8px;
-        width: 8px;
+    .icon-close-mobile {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
         position: absolute;
-        left: 7px;
-        top: 7px;
+        right:2px;
+        top:0px;
     }
 
+ 
     .icon-team-mobile {
         display: flex;
         justify-content: center;
@@ -1079,6 +1089,7 @@ body {
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+ 
     .icon-mobile {
         fill: white;
         text-decoration: none;
